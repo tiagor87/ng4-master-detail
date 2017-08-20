@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let pessoa of pessoas; let i = index" (click)="selecionar(pessoa, i)">
+          {{pessoa.NmPessoa}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <ng4-pessoa-home *ngIf="!pessoa; else edicao"></ng4-pessoa-home>
+      <ng-template #edicao>
+        <ng4-pessoa-edicao [pessoa]="pessoa" (gravada)="gravar($event)"></ng4-pessoa-edicao>
+      </ng-template>
+    </div>
+  </div>
+</div>

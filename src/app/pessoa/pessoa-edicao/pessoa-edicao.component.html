@@ -1,0 +1,7 @@
+<form #form="ngForm" (submit)="gravar()">
+  <div class="form-group">
+    <label for="nome-pessoa">Nome</label>
+    <input id="nome-pessoa" name="NmPessoa" type="text" class="form-control" [(ngModel)]="pessoa.NmPessoa">
+  </div>
+  <button class="btn btn-success">Gravar</button>
+</form>
