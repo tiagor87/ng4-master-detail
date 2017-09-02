@@ -28,8 +28,6 @@ export class UserService {
   ];
 
   usersListChanged = new Subject<User[]>();
-  beginEdit = new Subject<void>();
-  finishEdit = new Subject<void>();
   singleUserListChanged = new Subject<SingleUserListChanged>();
 
   getAll() {

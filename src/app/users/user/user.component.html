@@ -18,10 +18,16 @@
   </div>
   <div class="form-group row">
     <div class="col-xs-6">
-      <button class="btn btn-block btn-danger" type="button" (click)="cancel()">Cancel</button>
+      <button class="btn btn-block btn-danger" type="button" (click)="cancel()">
+        <span class="glyphicon glyphicon-remove"></span>
+        <span class="hidden-xs">Cancel</span>
+      </button>
     </div>
     <div class="col-xs-6">
-      <button class="btn btn-block btn-success" type="submit">Save</button>
+      <button class="btn btn-block btn-success" type="submit">
+        <span class="glyphicon glyphicon-floppy-disk"></span>
+        <span class="hidden-xs">Save</span>
+      </button>
     </div>
   </div>
 </form>

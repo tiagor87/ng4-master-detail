@@ -22,7 +22,6 @@ export class UserComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.userForm = this.buildForm();
     this.route.params.subscribe(params => {
-      this.service.beginEdit.next();
       this.user = this.service.getById(+params['id']);
       if (!!this.user) {
         this.userForm.setValue(this.user);
@@ -33,7 +32,6 @@ export class UserComponent implements OnInit, OnDestroy {
   ngOnDestroy() {}
 
   cancel() {
-    this.service.finishEdit.next();
     this.router.navigate(['../'], {
       relativeTo: this.route
     });

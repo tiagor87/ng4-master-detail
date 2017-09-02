@@ -1,10 +1,10 @@
 <ul class="list-group">
-  <li class="list-group-item" [routerLink]="[user.id]" routerLinkActive="active" *ngFor="let user of users; let i = index">
+  <li class="list-group-item" [routerLink]="[user.id]" routerLinkActive="active" *ngFor="let user of users">
     <div class="row">
-      <div class="col-xs-12 col-md-4">
+      <div class="col-md-4">
         <img class="img-responsive img-rounded" [src]="user.urlProfileImage" alt="">
       </div>
-      <div class="col-xs-12 col-md-8">
+      <div class="hidden-xs hidden-sm col-md-8">
         <h4 class="list-group-item-heading">{{user.name}}</h4>
         <p class="list-group-item-text">{{user.email}}</p>
       </div>
