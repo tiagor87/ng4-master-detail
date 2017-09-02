@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng4-master-detail App', () => {
+describe('master-detail App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -9,6 +9,6 @@ describe('ng4-master-detail App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to ng4!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

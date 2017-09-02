@@ -117,13 +117,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "ng4",
+      "app",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "ng4",
+      "app",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

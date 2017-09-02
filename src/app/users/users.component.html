@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-4" [ngClass]="{'hidden-xs hidden-sm': editing}">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <button [routerLink]="['new']" class="btn btn-success btn-block" type="button">New user</button>
+          </div>
+        </div>
+      </div>
+      <app-user-list></app-user-list>
+    </div>
+    <div class="col-xs-12 col-md-8" [ngClass]="{'hidden-xs hidden-sm': !editing}">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
